@@ -1,0 +1,2 @@
+[start]
+cmd = "gunicorn test:app --bind 0.0.0.0:$PORT --timeout 300 --workers 2 --log-level debug --access-logfile - --error-logfile -"
